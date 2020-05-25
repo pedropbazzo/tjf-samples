@@ -16,7 +16,6 @@
 		<module>tjf-api-samples/tjf-api-core-exception-sample</module>
 		<module>tjf-api-samples/tjf-api-context-sample</module>
 		<module>tjf-api-samples/tjf-api-jpa-filters-sample</module>
-		<module>tjf-api-samples/tjf-api-jpa-sample</module>
 		<module>tjf-api-samples/tjf-api-jpa-specification-sample</module>
 		<module>tjf-core-samples/tjf-core-validation-sample</module>
 		<module>tjf-i18n-samples/tjf-i18n-core-sample</module>
@@ -30,7 +29,8 @@
 		<module>tjf-tenant-samples/tjf-tenant-discriminator-sample</module>
 		<module>tjf-tenant-samples/tjf-tenant-schema-sample</module>
 		<module>tjf-utils-samples/sw-query</module>
-		<module>tjf-sgdp-samples/tjf-sgdp-core-sample</module>
+		<module>tjf-sgdp-samples/tjf-sgdp-app-sample</module>
+		<module>tjf-sgdp-samples/tjf-sgdp-service-sample</module>
 		<module>tjf-osgi-samples/tjf-osgi-sample</module>
 	</modules>
 </project>
