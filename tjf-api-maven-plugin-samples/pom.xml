@@ -102,7 +102,7 @@
 					<plugin>
 						<groupId>com.totvs.tjf</groupId>
 						<artifactId>tjf-api-maven-plugin</artifactId>
-						<version>1.21.0-RELEASE</version>
+						<version>1.22.0-RELEASE</version>
 						<executions>
 							<execution>
 								<phase>integration-test</phase>
