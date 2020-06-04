@@ -14,6 +14,9 @@ import com.tjf.sample.github.model.Client;
 import com.tjf.sample.github.repository.ClientRepository;
 import com.totvs.tjf.api.context.stereotype.ApiGuideline;
 import com.totvs.tjf.api.context.stereotype.ApiGuideline.ApiGuidelineVersion;
+import com.totvs.tjf.api.context.stereotype.openapi.MessageDocumentationApi;
+import com.totvs.tjf.api.context.stereotype.openapi.ProductInformationApi;
+import com.totvs.tjf.api.context.stereotype.openapi.XTOTVSApi;
 import com.totvs.tjf.api.context.v1.response.ApiCollectionResponse;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
@@ -31,11 +34,13 @@ import io.swagger.v3.oas.annotations.servers.ServerVariable;
 								description = "Controle de Clientes", 
 								version = "1.000", 
 								contact = @Contact(name = "", url = "", email = "")), 
-								servers = @Server(url = "{{host}}/api/v1/client", 
-												  description = "Descrição do Server", 
-												  variables = {
-														  @ServerVariable(name = "serverUrl", defaultValue = "localhost"),
-														  @ServerVariable(name = "serverHttpPort", defaultValue = "8080") }))
+				   servers = @Server(url = "{{host}}/api/v1/client", 
+				   		description = "Descrição do Server", 
+				   		variables = {
+				   				@ServerVariable(name = "serverUrl", defaultValue = "localhost"),
+                                @ServerVariable(name = "serverHttpPort", defaultValue = "8080")}))
+@XTOTVSApi(messageDocumentation = @MessageDocumentationApi(name = "Client", description = "Cliente", segment = "Saúde"), 
+			productInformation = @ProductInformationApi(product = "OpenApiSample", contact = "tjf@totvs.com.br", description = "Open Api Sample", helpUrl = "http://tjf.totvs.com.br"))
 public class ClientController {
 
 	@Autowired
