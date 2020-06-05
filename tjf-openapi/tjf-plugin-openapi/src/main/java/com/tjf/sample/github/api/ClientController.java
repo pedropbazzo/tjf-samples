@@ -32,7 +32,7 @@ import io.swagger.v3.oas.annotations.servers.ServerVariable;
 @ApiGuideline(ApiGuidelineVersion.v1)
 @OpenAPIDefinition(info = @Info(title = "API de Clientes", 
 								description = "Controle de Clientes", 
-								version = "1.000", 
+								version = "2.003", 
 								contact = @Contact(name = "", url = "", email = "")), 
 				   servers = @Server(url = "{{host}}/api/v1/client", 
 				   		description = "Descrição do Server", 
