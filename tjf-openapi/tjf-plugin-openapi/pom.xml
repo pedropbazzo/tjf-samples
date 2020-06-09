@@ -40,19 +40,19 @@
 		<dependency>
 			<groupId>com.totvs.tjf</groupId>
 			<artifactId>tjf-api-jpa</artifactId>
-			<version>1.22.0-RELEASE</version>
+			<version>1.23.0-RELEASE</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>com.totvs.tjf</groupId>
 			<artifactId>tjf-api-context</artifactId>
-			<version>1.22.0-RELEASE</version>
+			<version>1.23.0-RELEASE</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>com.totvs.tjf</groupId>
 			<artifactId>tjf-api-core</artifactId>
-			<version>1.22.0-RELEASE</version>
+			<version>1.23.0-RELEASE</version>
 		</dependency>
 
 		<!-- OpenApi -->
@@ -113,7 +113,7 @@
 			<plugin>
 				<groupId>com.totvs.tjf</groupId>
 				<artifactId>tjf-api-ttalk-maven-plugin</artifactId>
-				<version>1.22.0-RELEASE</version>
+				<version>1.23.0-RELEASE</version>
 				<executions>
 					<execution>
 						<phase>integration-test</phase>

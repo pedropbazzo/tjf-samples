@@ -19,7 +19,9 @@ import com.totvs.tjf.api.context.stereotype.ApiGuideline;
 import com.totvs.tjf.api.context.stereotype.ApiGuideline.ApiGuidelineVersion;
 import com.totvs.tjf.api.context.stereotype.openapi.MessageDocumentationApi;
 import com.totvs.tjf.api.context.stereotype.openapi.ProductInformationApi;
+import com.totvs.tjf.api.context.stereotype.openapi.ProductInformationEndPoint;
 import com.totvs.tjf.api.context.stereotype.openapi.XTOTVSApi;
+import com.totvs.tjf.api.context.stereotype.openapi.XTOTVSEndPoint;
 import com.totvs.tjf.api.context.v1.response.ApiCollectionResponse;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
@@ -61,6 +63,7 @@ public class ProductController {
 					   		 @ApiResponse(responseCode = "400", 
 					   		 			  description = "Erro ao retornar a lista de Produtos.")})
 	@GetMapping(path = "/list")
+	@XTOTVSEndPoint(productInformation = @ProductInformationEndPoint(minimalVersion = "2.0", product = "OpenApiSample"))
 	public ApiCollectionResponse<Product> findAll() {
 		return ApiCollectionResponse.of(productRepository.findAll());
 	}
